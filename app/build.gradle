@@ -5,13 +5,18 @@ plugins {
     id("com.google.dagger.hilt.android")
 }
 
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
-    namespace 'com.oliverbotello.example.hms.wearengine'
+    namespace 'com.rutasdeautobuses.transmileniositp'
     compileSdk 35
 
     defaultConfig {
-//        applicationId "com.oliverbotello.example.hms.wearengine"
-        applicationId "com.higia.integrapp"
+        applicationId "com.rutasdeautobuses.transmileniositp"
         minSdk 28
         targetSdk 35
         versionCode 1
@@ -23,46 +28,42 @@ android {
         }
     }
     signingConfigs {
-        debug {
-            storeFile file("../dev.jks")
-            storePassword "Oliver404"
-            keyAlias "dev-key"
-            keyPassword "Oliver404"
-        }
         release {
-            storeFile file("../dev.jks")
-            storePassword "Oliver404"
-            keyAlias "dev-key"
-            keyPassword "Oliver404"
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
         }
     }
     buildTypes {
-        debug {
-            signingConfig signingConfigs.debug
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
         release {
-            minifyEnabled false
-            signingConfig signingConfigs.debug
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
     buildFeatures {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.5.1'
+        kotlinCompilerExtensionVersion '1.5.10'
     }
     packaging {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    kapt {
+        javacOptions {
+            option("--add-exports", "jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED")
         }
     }
 }

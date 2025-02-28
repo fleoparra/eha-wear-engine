@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine.ui.theme
+package com.rutasdeautobuses.transmileniositp.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

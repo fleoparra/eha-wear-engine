@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine.service
+package com.rutasdeautobuses.transmileniositp.service
 
 import android.content.Context
 import com.huawei.wearengine.HiWear

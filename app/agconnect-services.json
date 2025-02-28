@@ -1,9 +1,9 @@
 {
 	"agcgw":{
-		"backurl":"connect-dre.hispace.hicloud.com",
-		"url":"connect-dre.dbankcloud.cn",
-		"websocketbackurl":"connect-ws-dre.hispace.dbankcloud.com",
-		"websocketurl":"connect-ws-dre.hispace.dbankcloud.cn"
+		"backurl":"connect-dra.hispace.hicloud.com",
+		"url":"connect-dra.dbankcloud.cn",
+		"websocketbackurl":"connect-ws-dra.hispace.dbankcloud.com",
+		"websocketurl":"connect-ws-dra.hispace.dbankcloud.cn"
 	},
 	"agcgw_all":{
 		"CN":"connect-drcn.dbankcloud.cn",
@@ -26,26 +26,26 @@
 		"SG_back":"connect-ws-dra.hispace.dbankcloud.com"
 	},
 	"client":{
-		"cp_id":"890052100000000486",
-		"product_id":"9105385871707863588",
-		"client_id":"436535447355655168",
-		"client_secret":"DEECD666E69F3CFBCBBCE3B66C63A32C90C70594D9A8AE362324FED7D4333D77",
-		"project_id":"9105385871707863588",
-		"app_id":"100954277",
-		"api_key":"CgB6e3x9zdU10epCJKs8Ixl1Hx32N4jNm4P267g75NdjjLM4I9Tzv5J7wa9XwM09N0NkSLFbzNOkgvjeEuPUZ3Ot",
-		"package_name":"com.higia.integrapp"
+		"cp_id":"890057000000000497",
+		"product_id":"9105385871708169195",
+		"client_id":"213981282474919040",
+		"client_secret":"E6E19349725350CA9D8F2E2966CF53C39B1DC8FCE10046998C34EB0B0A3CBE7C",
+		"project_id":"9105385871708169195",
+		"app_id":"101257773",
+		"api_key":"CV6m+5V1L7N2sgRhMPenWDKAOaHLu1bkfe39h1FXRCEpPMbAu/LNgqwlMDfPt2kxQYgYMSvMmobaSs5RZSLZIzdyA2cK",
+		"package_name":"com.rutasdeautobuses.transmileniositp"
 	},
 	"oauth_client":{
-		"client_id":"100954277",
+		"client_id":"101257773",
 		"client_type":1
 	},
 	"app_info":{
-		"app_id":"100954277",
-		"package_name":"com.higia.integrapp"
+		"app_id":"101257773",
+		"package_name":"com.rutasdeautobuses.transmileniositp"
 	},
 	"service":{
 		"analytics":{
-			"collector_url":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
+			"collector_url":"datacollector-dra.dt.hicloud.com,datacollector-dra.dt.dbankcloud.cn",
 			"collector_url_ru":"datacollector-drru.dt.dbankcloud.ru,datacollector-drru.dt.hicloud.com",
 			"collector_url_sg":"datacollector-dra.dt.hicloud.com,datacollector-dra.dt.dbankcloud.cn",
 			"collector_url_de":"datacollector-dre.dt.hicloud.com,datacollector-dre.dt.dbankcloud.cn",
@@ -58,7 +58,7 @@
 			"dh_url":"edukit.cloud.huawei.com.cn"
 		},
 		"search":{
-			"url":"https://search-dre.cloud.huawei.com"
+			"url":"https://search-dra.cloud.huawei.com"
 		},
 		"cloudstorage":{
 			"storage_url_sg_back":"https://agc-storage-dra.cloud.huawei.asia",
@@ -72,38 +72,24 @@
 			"storage_url_cn":"https://agc-storage-drcn.platform.dbankcloud.cn"
 		},
 		"ml":{
-			"mlservice_url":"ml-api-dre.ai.dbankcloud.com,ml-api-dre.ai.dbankcloud.cn"
+			"mlservice_url":"ml-api-dra.ai.dbankcloud.com,ml-api-dra.ai.dbankcloud.cn"
 		}
 	},
-	"region":"DE",
+	"region":"SG",
 	"configuration_version":"3.0",
 	"appInfos":[
 		{
-			"package_name":"com.higia.integrapp",
+			"package_name":"com.rutasdeautobuses.transmileniositp",
 			"client":{
-				"app_id":"100954277"
+				"app_id":"101257773"
 			},
 			"app_info":{
-				"package_name":"com.higia.integrapp",
-				"app_id":"100954277"
+				"package_name":"com.rutasdeautobuses.transmileniositp",
+				"app_id":"101257773"
 			},
 			"oauth_client":{
 				"client_type":1,
-				"client_id":"100954277"
-			}
-		},
-		{
-			"package_name":"com.higia.integrapp.huawei",
-			"client":{
-				"app_id":"107079093"
-			},
-			"app_info":{
-				"package_name":"com.higia.integrapp.huawei",
-				"app_id":"107079093"
-			},
-			"oauth_client":{
-				"client_type":1,
-				"client_id":"107079093"
+				"client_id":"101257773"
 			}
 		}
 	]

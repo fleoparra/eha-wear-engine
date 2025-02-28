@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine
+package com.rutasdeautobuses.transmileniositp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,8 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.oliverbotello.example.hms.wearengine.ui.screens.HomeScreen
-import com.oliverbotello.example.hms.wearengine.ui.theme.EHAWearEngineTheme
+import com.rutasdeautobuses.transmileniositp.ui.screens.HomeScreen
+import com.rutasdeautobuses.transmileniositp.ui.theme.EHAWearEngineTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 

@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine.utils
+package com.rutasdeautobuses.transmileniositp.utils
 
 enum class ProgressVars(val value: String) {
     ORIGEN_ANIMAL("prog_origenanimal"),

@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine.ui.models
+package com.rutasdeautobuses.transmileniositp.ui.models
 
 data class EntPermission(
     val name: String,

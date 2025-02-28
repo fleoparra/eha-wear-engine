@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine
+package com.rutasdeautobuses.transmileniositp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

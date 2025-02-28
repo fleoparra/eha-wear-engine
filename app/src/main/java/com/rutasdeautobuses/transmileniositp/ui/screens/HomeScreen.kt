@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine.ui.screens
+package com.rutasdeautobuses.transmileniositp.ui.screens
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -48,9 +48,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.huawei.wearengine.device.Device
-import com.oliverbotello.example.hms.wearengine.R
-import com.oliverbotello.example.hms.wearengine.ui.models.EntPermission
-import com.oliverbotello.example.hms.wearengine.ui.theme.Typography
+import com.rutasdeautobuses.transmileniositp.R
+import com.rutasdeautobuses.transmileniositp.ui.models.EntPermission
+import com.rutasdeautobuses.transmileniositp.ui.theme.Typography
 import org.json.JSONObject
 
 @Composable

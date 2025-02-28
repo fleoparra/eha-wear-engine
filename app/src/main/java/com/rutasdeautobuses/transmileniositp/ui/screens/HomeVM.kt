@@ -1,4 +1,4 @@
-package com.oliverbotello.example.hms.wearengine.ui.screens
+package com.rutasdeautobuses.transmileniositp.ui.screens
 
 import android.content.Context
 import android.util.Log
@@ -12,8 +12,8 @@ import com.huawei.wearengine.device.Device
 import com.huawei.wearengine.p2p.Message
 import com.huawei.wearengine.p2p.Receiver
 import com.huawei.wearengine.p2p.SendCallback
-import com.oliverbotello.example.hms.wearengine.ui.models.EntPermission
-import com.oliverbotello.example.hms.wearengine.utils.ProgressVars
+import com.rutasdeautobuses.transmileniositp.ui.models.EntPermission
+import com.rutasdeautobuses.transmileniositp.utils.ProgressVars
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -34,7 +34,7 @@ class HomeVM @Inject constructor(@ApplicationContext private val context: Contex
         private const val WATCH_APP_PUBLIC_KEY = "682284312258685632"
     }
 
-    private val deviceClient = HiWear.getDeviceClient(context) cz
+    private val deviceClient = HiWear.getDeviceClient(context)
     private val authClient = HiWear.getAuthClient(context)
     private val p2pClient = HiWear.getP2pClient(context)
     private val receiver = Receiver { message ->
